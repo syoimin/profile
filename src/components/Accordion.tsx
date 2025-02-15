@@ -548,7 +548,7 @@ const Accordion = () => {
   const [expanded, setExpanded] = React.useState<string | false>(false);
 
   const handleChange =
-    (panel: string, title: string) =>
+    (panel: string) =>
     (event: React.SyntheticEvent, isExpanded: boolean) => {
       // ロケーションハッシュを変更（title ハッシュを URL に付与すると アコーディオン開閉時の位置がずれるため暫定で指定なしにしている）
       window.location.hash = "";
@@ -569,7 +569,7 @@ const Accordion = () => {
           }
           id={data.title}
           className={data.feat ? "feat" : ""}
-          onChange={handleChange(`panel ${index}`, data.title)}
+          onChange={handleChange(`panel ${index}`)}
         >
           {/* <Link underline="none" href={`#${data.title}`}> */}
           <AccordionSummary
