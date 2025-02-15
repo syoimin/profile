@@ -103,7 +103,7 @@ const SkillsCard = (props: skillsProps) => {
                   <Grid item xs={2} width="100%">
                     {data.projects.map((project, index) => (
                       <Link
-                        href={`${BASE_URL}/my-profile/resume#${project.link}`}
+                        href={`./resume#${project.link}`}
                         key={index}
                         color="primary.link"
                         underline="hover"
