@@ -1,9 +1,7 @@
-import { FunctionComponent, SVGProps } from 'react';
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import ReactIcon from "./Icons/SvgIcon";
 import Rating from "@mui/material/Rating";
 
 import "../css/Skils.css";
@@ -15,7 +13,7 @@ const BASE_URL = process.env.REACT_APP_BASE_URL;
 console.log(BASE_URL);
 
 interface skilsObject {
-  icon: string;
+  icon: JSX.Element
   skil: string;
   others: Array<string>;
   rating: number;
@@ -59,7 +57,7 @@ const SkillsCard = (props: skillsProps) => {
                   pt={2}
                 >
                   <Grid item xs={2}>
-                    <ReactIcon icon={data.icon} viewBox={data.viewBox} />
+                    {data.icon}
                     {/* <img width="100" height="100" src={data.icon} /> */}
                   </Grid>
                   <Grid item xs={2} pt={2}>
