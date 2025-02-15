@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import React from "react";
+
 import Header from "../components/Header";
 import theme from "../styles/theme";
 import { ThemeProvider } from "@mui/material/styles";

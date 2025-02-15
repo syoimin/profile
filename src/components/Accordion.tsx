@@ -1,4 +1,3 @@
-import React from "react";
 import MuiAccordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -11,6 +10,7 @@ import Chip from "@mui/material/Chip";
 import Link from "@mui/material/Link";
 import { useLocation } from "react-router-dom";
 import "../css/Resume.css";
+import React from "react";
 
 const resumeData = [
   {
@@ -549,7 +549,7 @@ const Accordion = () => {
 
   const handleChange =
     (panel: string) =>
-    (event: React.SyntheticEvent, isExpanded: boolean) => {
+    (_event: React.SyntheticEvent, isExpanded: boolean) => {
       // ロケーションハッシュを変更（title ハッシュを URL に付与すると アコーディオン開閉時の位置がずれるため暫定で指定なしにしている）
       window.location.hash = "";
 

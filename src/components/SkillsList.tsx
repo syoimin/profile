@@ -1,6 +1,5 @@
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import React from "react";
 
 interface toolsData {
   title: string;

@@ -1,4 +1,3 @@
-import React from 'react';
 import TemplateDefault from "../templates/Default";
 import SkilsCard from "../components/SkillsCard";
 import SkillsList from "../components/SkillsList";

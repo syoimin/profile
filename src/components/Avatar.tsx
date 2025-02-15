@@ -1,4 +1,3 @@
-import * as React from "react";
 import MuiAvatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 

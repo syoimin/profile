@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import React from "react";
 const nowDate = new Date();
 
 // 社会人歴
