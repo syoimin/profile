@@ -1,0 +1,47 @@
+.skills .css-utj5kf-MuiPaper-root-MuiCard-root {
+  min-width: 100px;
+}
+
+.card {
+  position: relative;
+}
+.card a {
+  display: block;
+}
+.card-reverse {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-reverse p {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 表面の表示 */
+.card-surface {
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition: opacity 100ms 150ms, transform 300ms 150ms;
+}
+.card-reverse {
+  width: -webkit-fill-available;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: opacity 50ms 200ms, transform 300ms;
+}
+
+/* 裏面の表示 */
+.card-reverce-area:hover .card-surface {
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: opacity 50ms 200ms, transform 300ms;
+}
+.card-reverce-area:hover .card-reverse {
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition: opacity 100ms 150ms, transform 300ms 150ms;
+}

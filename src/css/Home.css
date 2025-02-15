@@ -1,0 +1,26 @@
+p {
+  white-space: pre-line;
+}
+
+p.thoughts {
+  text-indent: 1em;
+}
+
+.vertical-timeline-element-title {
+  color: #000;
+}
+
+.vertical-timeline-element-subtitle {
+  color: rgba(58, 60, 72, 0.45);
+}
+
+.vertical-timeline-element-content p.vertical-timeline-element-text {
+  line-height: 1.5;
+  font-size: 0.89em;
+  text-indent: 1rem;
+  color: rgba(37, 42, 68, 0.45);
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+  border-top: 3px solid #a62c46;
+}
