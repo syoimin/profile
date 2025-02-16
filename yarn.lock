@@ -1980,7 +1980,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.0.0":
+"@types/react-dom@npm:^19.0.3":
   version: 19.0.3
   resolution: "@types/react-dom@npm:19.0.3"
   peerDependencies:
@@ -2017,7 +2017,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.0.0":
+"@types/react@npm:^19.0.8":
   version: 19.0.8
   resolution: "@types/react@npm:19.0.8"
   dependencies:
@@ -3893,8 +3893,8 @@ __metadata:
     "@mui/icons-material": "npm:^6.4.4"
     "@mui/material": "npm:^6.4.4"
     "@types/node": "npm:^22.13.4"
-    "@types/react": "npm:^19.0.0"
-    "@types/react-dom": "npm:^19.0.0"
+    "@types/react": "npm:^19.0.8"
+    "@types/react-dom": "npm:^19.0.3"
     "@types/react-vertical-timeline-component": "npm:^3.3.6"
     "@vitejs/plugin-react": "npm:^4.3.3"
     eslint: "npm:^9.13.0"
@@ -3906,7 +3906,7 @@ __metadata:
     react-dom: "npm:^19.0.0"
     react-router-dom: "npm:^7.1.5"
     react-vertical-timeline-component: "npm:3.5.3"
-    typescript: "npm:~5.6.2"
+    typescript: "npm:^5.7.3"
     typescript-eslint: "npm:^8.10.0"
     vite: "npm:^5.4.9"
     vite-plugin-env-compatible: "npm:^2.0.1"
@@ -4562,23 +4562,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:~5.6.2":
-  version: 5.6.3
-  resolution: "typescript@npm:5.6.3"
+"typescript@npm:^5.7.3":
+  version: 5.7.3
+  resolution: "typescript@npm:5.7.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/44f61d3fb15c35359bc60399cb8127c30bae554cd555b8e2b46d68fa79d680354b83320ad419ff1b81a0bdf324197b29affe6cc28988cd6a74d4ac60c94f9799
+  checksum: 10c0/b7580d716cf1824736cc6e628ab4cd8b51877408ba2be0869d2866da35ef8366dd6ae9eb9d0851470a39be17cbd61df1126f9e211d8799d764ea7431d5435afa
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A~5.6.2#optional!builtin<compat/typescript>":
-  version: 5.6.3
-  resolution: "typescript@patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"
+"typescript@patch:typescript@npm%3A^5.7.3#optional!builtin<compat/typescript>":
+  version: 5.7.3
+  resolution: "typescript@patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/7c9d2e07c81226d60435939618c91ec2ff0b75fbfa106eec3430f0fcf93a584bc6c73176676f532d78c3594fe28a54b36eb40b3d75593071a7ec91301533ace7
+  checksum: 10c0/6fd7e0ed3bf23a81246878c613423730c40e8bdbfec4c6e4d7bf1b847cbb39076e56ad5f50aa9d7ebd89877999abaee216002d3f2818885e41c907caaa192cc4
   languageName: node
   linkType: hard
 

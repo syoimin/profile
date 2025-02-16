@@ -8,12 +8,13 @@ import "../css/Skils.css";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
+import React from "react";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 console.log(BASE_URL);
 
 interface skilsObject {
-  icon: JSX.Element
+  icon: React.ReactNode;
   skil: string;
   others: Array<string>;
   rating: number;
