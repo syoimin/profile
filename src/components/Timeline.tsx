@@ -191,8 +191,10 @@ const historyData = [
 
 const Timeline = () => {
   return (
+    /* @ts-expect-error Server Component */
     <VerticalTimeline>
       {historyData.map((data, index) => (
+        /* @ts-expect-error Server Component */
         <VerticalTimelineElement
           key={index}
           className={data.className}
