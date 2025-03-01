@@ -1,6 +1,6 @@
 import TemplateHome from "../templates/Home";
 import { 
-  Paper, Box, Grid, Typography, Container, Button, 
+  Paper, Box, Typography, Container, Button, 
   Card, CardContent, Chip, Divider, useTheme, useMediaQuery 
 } from "@mui/material";
 import MuiLink from "@mui/material/Link";
@@ -186,8 +186,15 @@ const Home = (): JSX.Element => {
         
         <Container maxWidth="lg" sx={{ position: "relative", py: 8 }}>
           {/* Main Profile Section */}
-          <Grid container spacing={4}>
-            <Grid item xs={12} md={7}>
+          <Box 
+            sx={{
+              display: 'flex',
+              flexDirection: isMobile ? 'column' : 'row',
+              gap: 4
+            }}
+          >
+            {/* Left Side - Profile Info */}
+            <Box sx={{ flex: '7 1 0', width: '100%' }}>
               <Typography 
                 component="h1" 
                 variant="h2" 
@@ -271,10 +278,10 @@ const Home = (): JSX.Element => {
                 </Link>
                 <IconLabel />
               </Box>
-            </Grid>
+            </Box>
 
-            {/* Skills Card Section */}
-            <Grid item xs={12} md={5}>
+            {/* Right Side - Skills Card */}
+            <Box sx={{ flex: '5 1 0', width: '100%' }}>
               <Card sx={{ 
                 backgroundColor: 'rgba(0, 0, 0, 0.7)', 
                 backdropFilter: 'blur(10px)',
@@ -338,15 +345,22 @@ const Home = (): JSX.Element => {
                   </Box>
                 </CardContent>
               </Card>
-            </Grid>
-          </Grid>
+            </Box>
+          </Box>
         </Container>
       </Paper>
 
       {/* Activities Section with Light Background */}
       <Box sx={{ bgcolor: '#f5f7fa', py: 8 }}>
         <Container maxWidth="lg">
-          <Box textAlign="center" mb={6}>
+          <Box 
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              mb: 6
+            }}
+          >
             <Typography 
               variant="h3" 
               color="primary.main"
@@ -383,7 +397,13 @@ const Home = (): JSX.Element => {
       {/* History Section */}
       <Box sx={{ bgcolor: '#EDF2F6', py: 8 }}>
         <Container maxWidth="lg">
-          <Box textAlign="center" mb={6}>
+          <Box 
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              mb: 6
+            }}
+          >
             <Typography 
               variant="h3" 
               color="primary.main"
