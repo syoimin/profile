@@ -14,7 +14,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import StorageIcon from '@mui/icons-material/Storage';
 import CloudIcon from '@mui/icons-material/Cloud';
 import BuildIcon from '@mui/icons-material/Build';
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 
 // Types
 interface AboutData {
@@ -123,11 +123,11 @@ const homeData: HomeData = {
   }
 };
 
-const Home = (): JSX.Element => {
+const Home: React.FC = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-  const SkillChip = ({ label }: SkillChipProps): JSX.Element => (
+  const SkillChip: React.FC<SkillChipProps> = ({ label }) => (
     <Chip 
       label={label} 
       sx={{ 
@@ -141,7 +141,7 @@ const Home = (): JSX.Element => {
     />
   );
 
-  const SkillSection = ({ title, icon, skills }: SkillSectionProps): JSX.Element => (
+  const SkillSection: React.FC<SkillSectionProps> = ({ title, icon, skills }) => (
     <Box mb={3}>
       <Box display="flex" alignItems="center" mb={1}>
         {icon}
